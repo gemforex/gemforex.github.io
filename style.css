@@ -1,0 +1,37 @@
+body {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+img:hover {
+  opacity: 0.7;
+}
+
+.btn {
+  margin: 30px 0 20px;
+}
+.updown {
+  animation-name:updown1;   /* アニメーション名の指定 */
+  animation-delay:0s;   /* アニメーションの開始時間指定 */
+  animation-duration: 3s;   /* アニメーション動作時間の指定 */
+  animation-timing-function: ease-in-out;  /* アニメーションの動き指定（徐々に早く）*/
+  animation-iteration-count: infinite; 
+}
+small {
+  margin-bottom: 5px;
+}
+
+@keyframes updown1 {
+0% {
+  transform: translateY(0);
+}
+50% {
+  transform: translateY(-20px);
+}
+100% {
+  transform: translateY(0);
+}
+}
